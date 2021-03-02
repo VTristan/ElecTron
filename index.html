@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>πrofit</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="app.js"></script>
+</head>
+
+<body style="background: white;">
+    <br/>
+    <div class="input-group mb-1">
+        <button type="button" class="btn btn-sm bitcoin  btn-circle" id="btc" onclick="calculerV()"><i class="fa fa-line-chart"></i></button>
+        <input type="number" id="vd" class="form-control border border-primary col-4" placeholder="valeur de départ" onkeyup="differenceV(this)">
+        <div class="input-group-prepend">
+            <button class="btn btn-sm cross" id="b_vd" onclick="delete_vd()"><i class="fa fa-close"></i></button>
+            <button class="btn btn-sm cross" id="b_va" onclick="delete_va()"><i class="fa fa-close"></i></button>
+          </div>
+        <input type="number" id="va" class="form-control border border-primary col-4" placeholder="valeur d'arrivé" onkeyup="differenceV(this)">
+        <span class="col-1" id="vDiff"></span>
+    </div>
+
+    <div class="input-group mb-1">
+        <button type="button" class="btn btn-sm bitcoin  btn-circle" id="btc" onclick="calculerQ()"><i class="fa fa-area-chart"></i></button>
+        <input type="number" id="qd" class="form-control border border-success col-4" placeholder="quantité de départ" onkeyup="differenceQ(this)">
+        <div class="input-group-prepend">
+            <button class="btn btn-sm cross" id="b_qd" onclick="delete_qd()"><i class="fa fa-close"></i></button>
+            <button class="btn btn-sm cross" id="b_qa" onclick="delete_qa()"><i class="fa fa-close"></i></button>
+        </div>
+        <input type="number" id="qa" class="form-control border border-success col-4" placeholder="quantité d'arrivé" onkeyup="differenceQ(this)">
+        <span class="col-1" id="qDiff"></span>
+    </div>
+    
+    <div class="input-group mb-1">
+        <button type="button" class="btn btn-sm bitcoin  btn-circle" id="btc" onclick="calculerP()"><i class="fa fa-bitcoin"></i></button>
+        <input type="number" id="pd" class="form-control border border-warning col-4" placeholder="prix de départ" onkeyup="differenceP(this)">
+        <div class="input-group-prepend ">
+          <button class="btn btn-sm cross" id="b_pd" onclick="delete_pd()"><i class="fa fa-close"></i></button>
+          <button class="btn btn-sm cross" id="b_pa" onclick="delete_pa()"><i class="fa fa-close"></i></button>
+        </div>
+        <input type="number" id="pa" class="form-control border border-warning col-4" placeholder="prix d'arrivé" onkeyup="differenceP(this)">
+        <span class="col-1" id="pDiff"></span>
+    </div>
+    <span class="col-1">notes:</span>
+        <div class="col-12">
+            <textarea class="textarea" id="textarea" name="textarea" rows="3" cols="50"></textarea>
+        </div>
+        <!--button type="button" class="btn btn-sm fog  btn-circle" id="sun" onclick="fog()"><i class="fa fa-magic"></i></button>
+        <button type="button" class="btn btn-sm sun  btn-circle" id="sun" onclick="sun()"><i class="fa fa-sun-o"></i></button>
+        <button type="button" class="btn btn-sm moon  btn-circle" id="moon" onclick="moon()"><i class="fa fa-moon-o"></i></button-->
+</body>
+</html>

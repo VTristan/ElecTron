@@ -1,0 +1,50 @@
+.btn:focus, .btn:active, .form-control, .form-control:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.cross {
+  font-size: 12px;
+}
+.cross:hover {
+  font-size: 14px;
+}
+.cross:active {
+  color: rgb(255, 0, 0);
+ }
+
+.bitcoin {
+  margin-top: 1%;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+.bitcoin:hover {
+  font-size: 18px;
+}
+.bitcoin:active {
+  color: rgb(255,215,0);
+}
+
+.col-1 {
+  font-size: 12px;
+}
+
+.textarea {
+  padding-left: -5px !important;
+}
+
+.sun:hover {
+  color: rgb(255, 0, 0);
+}
+
+.moon:hover {
+  color: rgb(255,215,0);
+}
+
+.fog:hover {
+  color: rgb(206, 206, 206);
+}
